@@ -1,5 +1,3 @@
-// /path/to/your/project/bot.js
-
 require('dotenv').config();
 const { Client, GatewayIntentBits, REST, Routes } = require('discord.js');
 const { joinVoiceChannel, createAudioPlayer, createAudioResource, AudioPlayerStatus, VoiceConnectionStatus } = require('@discordjs/voice');
@@ -58,7 +56,7 @@ client.on('ready', () => {
 client.on('interactionCreate', async interaction => {
   if (!interaction.isCommand()) return;
 
-  const { commandName, options, member, guild, channel } = interaction;
+  const { commandName, options, member, guild } = interaction;
 
   if (commandName === 'play') {
     const query = options.getString('query');
