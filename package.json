@@ -1,5 +1,5 @@
 {
-  "name": "discord-bot",
+  "name": "ytdl-core",
   "version": "1.0.0",
   "description": "A Discord bot with music player controls",
   "main": "index.js",
